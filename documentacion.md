@@ -1,18 +1,18 @@
-Requesitos y diagrama de casos de uso
+#Requesitos y diagrama de casos de uso
 En la introducción de esta documentación, en la sección El proyecto Vanilla Games, en concreto en el apartado Requisitos del proyecto y casos de uso general, hemos definido qué se espera de nuestra aplicación web, a partir de los 'Casos de uso general'.
 
 También hemos dividido todo el trabajo de desarrollo en diferentes versiones, con la intención de que nuestro proyecto esté operativo desde el inicio de su implementación, de manera que conforme evolucione a posteriores versiones, aumentaremos su nivel de funcionalidad.
 
 Por lo tanto, vamos a comenzar por la versión 1.0.
 
-[![Diagrama de casos de uso](https://carrebola.github.io/vanillaPill/assets/images/diagramaCasosUso_1-3fc60e64208490df3bd2eb0f595cedbc.png)](https://carrebola.github.io/vanillaPill/assets/images/diagramaCasosUso_1-3fc60e64208490df3bd2eb0f595cedbc.png)
 
 Lo primero es definir los casos de uso para esta versión. Una primera aproximación podría ser la siguiente:
 
 RECUERDA QUE...
 Los casos de uso son una herramienta esencial para comprender y especificar los requisitos de un sistema, y para garantizar que el software desarrollado satisfaga las necesidades de los usuarios finales.
 
-Casos de uso para la V1.0 - Definición básica
+##Casos de uso para la V1.0 - Definición básica
+
 Registrar usuario: Un usuario puede registrarse en la plataforma proporcionando su nombre, apellidos, email y contraseña.
 Recuperar contraseña: Un usuario registrado puede solicitar la recuperación de su contraseña en caso de que la haya olvidado. Para ello, se le enviará un correo electrónico con las instrucciones para restablecer su contraseña.
 Iniciar sesión: Un usuario registrado puede iniciar sesión en la plataforma proporcionando su email y contraseña.
@@ -24,7 +24,9 @@ Editar proyecto: Un usuario con el perfil de desarrollador puede editar un proye
 Eliminar proyecto: Un usuario con el perfil de desarrollador puede eliminar un proyecto que haya publicado previamente.
 Ver/Editar usuarios: Un adminsrador puede ver una tabla con todos los usuarios que hay registrados y editar la información, incluido el ROL de usuario.
 Eliminar usuario: Un administrador puede eliminar cualquier usuario registrado en la plataforma.
-Diagrama de casos de uso
+
+##Diagrama de casos de uso
+
 Para tener la información de manera gráfica vamos a utilizar uno de los diagramas UML que aprendimos a hacer el curso pasado:
 
 INFO
@@ -37,14 +39,16 @@ Para dibujar el diagrama de casos de uso una herramienta interesante puede ser F
 
 Figma es una herramienta de diseño de interfaces de usuario (UI) y experiencia de usuario (UX) basada en la nube. Permite a los diseñadores crear, prototipar y colaborar en diseños interactivos de alta calidad de forma colaborativa.
 
-El diagrama de casos de uso para la versión 1.0 sería el siguiente:
+##El diagrama de casos de uso para la versión 1.0 sería el siguiente:
+
+[![Diagrama de casos de uso](https://carrebola.github.io/vanillaPill/assets/images/diagramaCasosUso_1-3fc60e64208490df3bd2eb0f595cedbc.png)](https://carrebola.github.io/vanillaPill/assets/images/diagramaCasosUso_1-3fc60e64208490df3bd2eb0f595cedbc.png)
 
 Diagrma de casos de uso para la versión 1.0
 diagrama de casos de uso V1.0
 
 Este diagrama refleja de forma resumida qué acciones se pueden llevar a cabo en nuestro aplicación dependiendo del rol del usuario.
 
-Planificación del proyecto
+#Planificación del proyecto
 ¡Estamos listos y hemos comenzado a desarrollar la versión 1.0 de nuestro proyecto!
 
 En el apartado anterior hemos definido qué funcionalidades debe tener. Además, hemos analizado las diferentes arquitecturas y tecnologías y hemos optado por utilizar una CSR (Client Side Rendering basada en una SPA programada en Javascript y conectada a Supabase como servicio backend).
@@ -55,10 +59,11 @@ Para poder planificar el trabajo, vamos a crear el 'backlog de proyecto', es dec
 
 INFO
 ¿Qué es el backlog de producto?
-Backlog de producto y de sprint.
+
+##Backlog de producto y de sprint.
 Estas serían las historias a planificar en la entrega de la versión 1 de nuestro proyecto agrupadas por sprints:
 
-SPRINT 0: Definición del proyecto
+####SPRINT 0: Definición del proyecto
 Historia: Requisitos, casos de uso y diagrama de casos de uso Como desarrollador, quiero definir de manera genérica las especificaciones de la aplicación.
 
 Historia: Versiones y planificación Como desarrollador, quiero agrupar las especificaciones en versiones, definir las tareas necesarias y realizar la planificación de todo el proceso de desarrollo del proyecto.
@@ -67,14 +72,14 @@ Historia: Casos de uso especificos y diagramas de flujo Como desarrollador quier
 
 (Esta historia ya hemos comenzado a trabajarla en apartados anteriores. No obstante, es importante que quede constancia de ello para poder hacer una valoración del tiempo total invertido.)
 
-SPRINT 1: Diseño de la interficie
+####SPRINT 1: Diseño de la interficie
 Historia: Bocetos: Como diseñador quiero dibujar los bocetos de todas las posibles pantallas del proyecto y testear su funcionamiento.
 Historia: Wireframes, Mockup y guía de estilos: Como diseñador quiero dibujar los mockups y crear la guía de estilos a partir de los colores, tipografías, etc seleccionadas.
-SPRINT 2: Prototipos
+####SPRINT 2: Prototipos
 Historia: Entorno de desarrollo: Como diseñador/programador quiero instalar y configurar las herramientas necesarias para programar la aplicación, trabajar con repositorios y crear un entorno integración continua y despliegue continuo.
 Historia: Prototipos html: Como maquetador web quiero crear las páginas html del proyecto a partir de los wireframes aplicando la guía de estilos y utilizando Bootstrap 5.
 Historia: Validaciones de formularios: Como programador quiero definir e implementar las validaciones de los formularios del proyecto
-Sprint 3: Implementación de la SPA
+####Sprint 3: Implementación de la SPA
 Historia: Entorno de desarrollo basado en NodeJS: Como programador quiero instalar y configurar todas las herramientas necesarias (NodeJS, Vite, etc.) para el desarrollo de una app tipo SPA basada en Javascript
 Historia: Creación de proyecto basado en SPA y organización de archivos para las vistas basadas en módulos js: Como programador quiero configurar el sistema de carpetas para las vistas y crear los archivos a partir de componentes html basados en los prototipos.
 Historia: Creación de componentes: Como programador quiero crear los componentes para el encabezado, el enrutado de las páginas y los menús.
@@ -84,7 +89,7 @@ Historia: Lógica para la autenticación de usuarios: Como usuario registrado qu
 Historia: Actualización de componentes header y menús en función del rol de usuario logueado: Como usuario logueado quiero poder navegar por las vistas de la aplicación. (Podrán verse solo las opciones que corresponden a mi rol).
 Historia: Diseño de las vistas a partir de los datos de un archivo JSON: Como programador quiero simular el registro, login y visualización de las tablas de usuarios y proyectos a partir de datos ficticios obtenidos de una archivo json de prueba.
 Historia: Lógica para la administración de usuarios y proyectos (ver, editar, borrar, etc.): Como administrador quiero poder gestionar los usuarios y proyectos (CRUD)
-Sprint 4: Backend
+####Sprint 4: Backend
 Historia: Diseño de la base de datos: Como programador quiero diseñar la base de datos en base a diagrama UML (diagrama entidad-relación)
 
 Historia: Implementación de las tablas y funciones en supabase: Como programador quiero implementar las bases de datos en Supabase, diseñar las consultas e implementar las funciones postgree multitabla
@@ -93,7 +98,7 @@ Historia: API javascript de Supabase: Como programador quiero probar las apis de
 
 Historia: Implementación de un ORM para mapping de la base de datos: Como programador quiero diseñar el diagrama de clases e implementarlo en javascript para tener un mapping de la bd.
 
-Sprint 5: Integración del frontend y el backend
+####Sprint 5: Integración del frontend y el backend
 Historia: Login y registro: Como usuario quiero poder registrarme e iniciar sesión.
 
 Historia: Gestión de sesiones: Como usuario registrado quiero ver la web en base al rol que tengo asignado.
@@ -104,19 +109,19 @@ Historia: Gestión de Proyectos (Vista proyectos, detalle proyecto, etc): Como u
 
 Historia: Gestión de usuarios: Como usuario registrado 'administrador' quiero poder ver, editar y borrar los usuarios del sistema.
 
-Sprint 6: Revisión y despliegue en producción de la versión 1.0
+####Sprint 6: Revisión y despliegue en producción de la versión 1.0
 Historia: Test de usuarios Como diseñador quiero realizar tests de usuarios a un grupo de usuarios focales.
 
 Historia: Revisión de la aplicación Como programador quiero revisar y corregir los posibles problemas detectados en el test de usuarios.
 
 Historia: Despliegue en producción Como programador quiero despleguar la aplicación en producción.
 
-Casos de uso específicos y diagramas de flujo.
+#Casos de uso específicos y diagramas de flujo.
 En el primer apartado 'Requisitos y diagrama de casos de uso' para esta versión 1.0, hemos definido de manera general los casos de uso que se contemplan para cada actor y los hemos reflejado en un diagrama de casos de uso.
 
 Es el momento de ser más concretos y detenernos a reflexionar en cada uno de los procesos que se realizarán para cada tarea, incluyendo los posibles errores cometidos por el usuario o el propio sistema.
 
-Casos de uso específicos
+##Casos de uso específicos
 1. Registrar usuario
 Actores: Usuario no registrado.
 
@@ -269,7 +274,7 @@ El sistema muestra una tabla con 'inputs' con los datos de los usuarios.
 El administrador hace clic sobre el icono de eliminar usuario de la fila correspondiente.
 El sistema informa de que se eliminarán todos sus registros.
 El sistema muestra una confirmación de que la información de que el usuario ha sido borrado correctamente.
-Errores
+##Errores
 Vamos a repasar los diferentes casos de uso analizando el flujo principal y añadiendo los flujos alternativos para contemplar los posibles errores del sistema. Puedes considerar los siguientes mensajes:
 
 Error de conexión: El servidor no puede establecer una conexión con la base de datos, lo que impide que se puedan realizar operaciones en la plataforma. El sistema debería mostrar un mensaje de error indicando que no se pudo conectar con la base de datos y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
@@ -282,18 +287,18 @@ Error de autorización: Si un usuario intenta realizar una acción que no está 
 
 Error de servidor: En caso de que se produzca un error interno en el servidor, como una excepción no controlada, el sistema debería mostrar un mensaje de error genérico indicando que se produjo un error y ofrecer la posibilidad de volver a intentarlo o contactar con el soporte técnico.
 
-Hist3a - Diseño de la interfaz. Bocetos
+#Hist3a - Diseño de la interfaz. Bocetos
 Una vez tenemos claro las funcionalidades que debe realizar nuestra aplicación, comenzamos con el diseño de la interfaz.
 
 Este proceso incluye diseñar los bocetos, los wireframes y los mockups ,para acabar creando los prototipos con html.
 
 Sin duda, el primer paso, debe ser dibujar los bocetos, así que, busca un lápiz, una goma de borrar y un puñado de papel, ¡y manos a la obra!
 
-Deseño de Bocetos
+##Deseño de Bocetos
 INFO
 Recuerda que los bocetos son dibujos a mano alzada que representan ideas de diseño de manera rápida y no detallada. Los bocetos suelen ser utilizados al inicio del proceso de diseño para explorar diferentes ideas y soluciones de diseño de manera rápida y económica. Los bocetos son ideales para hacer borradores rápidos y para discutir ideas con colegas y clientes.
 
-Home y menús usuarios
+##Home y menús usuarios
 
 [![Home y menús usuarios](https://carrebola.github.io/vanillaPill/assets/images/1684861508218-79dad6473fd7d571d5f73e96f893af7f.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508218-79dad6473fd7d571d5f73e96f893af7f.jpg)
 
@@ -306,16 +311,16 @@ En el header vamos a alojar una barra superior fija con: el logo y nombre de la 
 El cuerpo (main) albergará el contenido de las páginas. Será la sección que vaya cambiando dependiendo de la página que carguemos. En la página home simplemente aparece una imagen de fondo y el nombre de la web.
 El header será meramente informativo.
 
-Regitro de un usuario
+##Regitro de un usuario
 
 [![Regitro de un usuario](https://carrebola.github.io/vanillaPill/assets/images/1684861508212-88f1ed0a8c53df9f791872b3b03519d8.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508212-88f1ed0a8c53df9f791872b3b03519d8.jpg)
 
 
-Iniciar sesión
+##Iniciar sesión
 
 [![Iniciar sesión](https://carrebola.github.io/vanillaPill/assets/images/1684861508205-edba4a097ae58ec58f1bb07dc4b7e5e1.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508205-edba4a097ae58ec58f1bb07dc4b7e5e1.jpg)
 
-Editar mi perfil
+##Editar mi perfil
 
 [![Editar mi perfil](https://carrebola.github.io/vanillaPill/assets/images/1684861508198-5b5eff368d5421682a834f3ed67af5bd.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508198-5b5eff368d5421682a834f3ed67af5bd.jpg)
 
@@ -323,7 +328,7 @@ Gestión de usuarios Editar perfil será una ventana modal, es decir, se mostrar
 
 Esta ventana de edición permitirá, además de modificar los datos del usuario, añadir una imagen de avatar. Por el momento, en esta primera versión, podremos añadir el link de una imagen que esté alojada en un servidor. En la siguiente versión (versión 1.1) actualizaremos esta ventana para que puedan subirse archivos (imágenes) al servidor.
 
-Listado de todos los proyectos
+##Listado de todos los proyectos
 
 [![Listado de todos los proyectos](https://carrebola.github.io/vanillaPill/assets/images/1684861508192-6b771260fe99faccc760b23f71f02406.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508192-6b771260fe99faccc760b23f71f02406.jpg)
 
@@ -335,7 +340,7 @@ También tenemos un buscador que permite buscar proyectos por palabras clave en 
 
 Las celdas de encabezado de las tablas incluyen un icono (flecha hacia arriba o hacia abajo) que permitirá ordenar la tabla por la columna en concreto.
 
-Listado de Mis proyectos
+##Listado de Mis proyectos
 
 [![Listado de Mis proyectos](https://carrebola.github.io/vanillaPill/assets/images/1684861508186-f38d99164909a0783d2040ce646e928a.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508186-f38d99164909a0783d2040ce646e928a.jpg)
 
@@ -343,13 +348,13 @@ En esta pestaña podemos ver los trabajos pertenecientes al usuario logueado. En
 
 Habría que valorar si es mejor crear un único buscador para el nombre y descripción del proyecto o dos barras de busqueda, una para cada sección, tal y como se muestra en el boceto anterior.
 
-Detalle de un proyecto
+##Detalle de un proyecto
 
 [![Detalle de un proyecto](https://carrebola.github.io/vanillaPill/assets/images/1684861508178-ed1f5e41681a1dcee1edac19f807c239.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508178-ed1f5e41681a1dcee1edac19f807c239.jpg)
 
 Si el usuario que está viendo la información de un proyecto en concreto es el autor de dicho proyecto, aparecerá un icono para la edición del mismo.
 
-Nuevo proyecto / Editar un proyecto
+##Nuevo proyecto / Editar un proyecto
 
 [![Nuevo proyecto / Editar un proyecto](https://carrebola.github.io/vanillaPill/assets/images/1684861508170-9db2cd42ef7a339d517e3d0b38d4ae45.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508170-9db2cd42ef7a339d517e3d0b38d4ae45.jpg)
 
@@ -357,7 +362,7 @@ Esta vista sirve tanto para crear un nuevo proyecto como para editarlo.
 
 Si el proyecto es nuevo, el botón mostrará el texto ENVIAR, pero si estamos editándolo aparecerá el texto ACTUALIZAR. Al crear o actualizar el proyecto, la web nos reenvía a la vista 'Detalle de proyecto'.
 
-Panel administración de proyectos
+##Panel administración de proyectos
 
 [![Panel administración de proyectos](https://carrebola.github.io/vanillaPill/assets/images/1684861508161-c9cfd413730d67ea74b43e48fedea5ec.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508161-c9cfd413730d67ea74b43e48fedea5ec.jpg)
 
@@ -365,7 +370,7 @@ Si tienes el rol 'administrador' aparecerá el item 'Panel administración' en e
 
 Esta vista permite editar o borrar cualquier proyecto haciendo click en los iconos correspondientes. La opción editar nos llevará a la vista 'Editar proyecto'
 
-Panel administración de usuarios
+##Panel administración de usuarios
 
 [![Panel administración de usuarios](https://carrebola.github.io/vanillaPill/assets/images/1684861508152-04e98cfb1faeecf2a53ea921bdd63ebe.jpg)](https://carrebola.github.io/vanillaPill/assets/images/1684861508152-04e98cfb1faeecf2a53ea921bdd63ebe.jpg)
 
