@@ -1,4 +1,4 @@
-export default {
+export const home =  {
     template: // html
     `
   <div class="container">
@@ -6,7 +6,9 @@ export default {
       Vanilla Games
     </h1>
     <div class="m-5 mx-auto" style="max-width: 400px">
-      <img src="images/logo.svg" alt="fpllefia" class="img-fluid" />
+    <a class="navbar-brand" href="#/home">
+    <img src="images/logo.svg" alt="fpllefia" class="img-fluid" />
+    </a>
     </div>
   </div>
     `
