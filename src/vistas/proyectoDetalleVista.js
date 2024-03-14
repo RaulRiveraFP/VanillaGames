@@ -1,4 +1,4 @@
-import { proyectos } from '../componentes/datosPrueba'
+import { proyectos } from '../bd/datosPrueba'
 
 export default {
   template: // html
@@ -64,7 +64,7 @@ export default {
 
     // Añadimos el id en data-id al botón editar para que al detectar el click podamos llamar a la vista de edición pasandole el id en cuestión
     document.querySelector('#botonEditarDetalle').setAttribute('data-id', proyecto.id)
-    
+
     // Boton volver atras
     document.querySelector('#botonVolver').addEventListener('click', () => {
       window.history.back()

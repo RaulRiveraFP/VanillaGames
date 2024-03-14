@@ -1,4 +1,3 @@
-  
 export const enrutador = {
 
   // Objeto (diccionario) con todas las rutas y su vista asociada
@@ -47,7 +46,6 @@ export const enrutador = {
       // Evitamos que se cargue la página
       const link = event.target
       if (link.classList.contains('router-link')) {
-        console.log('router-link')
         event.preventDefault()
         // Obtenemos la ruta del enlace sin el .html
         const href = link.getAttribute('href')
@@ -62,7 +60,6 @@ export const enrutador = {
 
     // Detectamos cuando alguien navega por el historial con los botones avanzar y retroceder del navegador.
     window.addEventListener('popstate', (e) => {
-      console.log('evento popstate - Te estás moviendo por el historial')
       enrutador.router()
     })
   }

@@ -6,7 +6,7 @@ export const ls = {
     let usuario = {
       email: 'anónimo',
       rol: 'no logueado',
-      avatar: ''
+      avatar: 'images/imagenVacia.png'
     }
     // Capturamos datos de localstorage
     const usuarioJSON = localStorage.getItem('usuarioVanilla')
@@ -24,6 +24,3 @@ export const ls = {
     localStorage.setItem('usuarioVanilla', usuarioJSON)
   }
 }
-
-
-  

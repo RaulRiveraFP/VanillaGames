@@ -1,4 +1,4 @@
-import { proyectos } from '../componentes/datosPrueba'
+import { proyectos } from '../bd/datosPrueba'
 import { ls } from '../componentes/funciones'
 
 export default {
@@ -110,21 +110,17 @@ export default {
   `,
   script: () => {
     // **** AQUI DEBEMOS CAPTURAR LOS PROYECTOS DE LA BASE DE DATOS ****
-    const usuario = ls.getUsuario()
-const datos = proyectos
-// ...
 
-    
-    // ...
-    
-    // Rest of your code
-    
     // Capturamos proyectos y guardamos en variable para poder ser filtrada
+    const datos = proyectos
+    let misProyectos = false
+    // Capturamos los datos del usuario logueado
+    const usuario = ls.getUsuario()
+
     // ####################################################################
     // *** FUNCIÓN PARA PINTAR TABLA A PARTIR DE ARRAY datos ***
     // ####################################################################
-    console.log(proyectos);
-    let misProyectos = false
+
     const pintaTabla = (proyectosFiltrados) => {
       // Si tenemos seleccionada la opción 'mis proyectos' filtramos los proyectos por user_id
       if (misProyectos) {
@@ -343,9 +339,6 @@ const datos = proyectos
     // Vista 'Todos los proyectos' / 'Mis proyectos'
     // ####################################################################
 
-    // Definimos que por defecto se muestran 'mis proyectos'
-   
-
     // *** Detectamos si se cambia de proyectos a mis proyectos al hacer click en las pestañas ***
     document.querySelector('.nav-tabs').addEventListener('click', (event) => {
       // Si click en 'Mis proyectos' cambiamos pestaña activa
@@ -412,4 +405,3 @@ const datos = proyectos
     }
   }
 }
-
